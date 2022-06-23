@@ -1,4 +1,4 @@
-#include "../includes/life.h"
+#include "life.h"
 
 static int	count_live_neighbors(t_data *data, int i, int j)
 {
