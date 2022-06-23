@@ -1,7 +1,7 @@
 NAME = life
 NAME2 = first_life
 
-CC = clang -Wall -Wextra -Werror
+CC = gcc -Wall -Wextra -Werror
 
 C = srcs/
 S = first_srcs/
