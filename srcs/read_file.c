@@ -1,11 +1,11 @@
 #include "../includes/life.h"
 
-static int	error(t_data *data)
+int	error(t_data *data)
 {
 	if (data->map)
 		ft_free2d(data->map);
 	if (data->temp)
-		ft_free2d(data->map);
+		ft_free2d(data->temp);
 	if (data)
 		free(data);
 	return (ERROR);
