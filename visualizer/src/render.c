@@ -6,7 +6,7 @@
 /*   By: dpalacio <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/22 11:37:59 by dpalacio          #+#    #+#             */
-/*   Updated: 2022/06/23 18:55:43 by dpalacio         ###   ########.fr       */
+/*   Updated: 2022/06/23 19:48:08 by dpalacio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ void	display_step(t_core *core)
 {
 	SDL_Rect	cell;
 	int			x = 0;
-	int			y = core->map.height * core->map.step;
+	int			y = core->map.height * core->map.step + 1;
 	int			x_off;
 	int			y_off;
 
@@ -52,7 +52,10 @@ void	display_step(t_core *core)
 			}
 			x = 0;
 			y++;
-			if (y % core->map.height == 0 && core->map.automatic == 1 && core->map.step < core->map.iterations)
-				core->map.step++;
+		}
+		if (y % core->map.height == 0 && core->map.automatic == 1 && core->map.step < core->map.iterations)
+		{
+			SDL_Delay(core->map.delay);
+			core->map.step++;
 		}
 }

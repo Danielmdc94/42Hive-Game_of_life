@@ -6,7 +6,7 @@
 /*   By: dpalacio <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/22 11:44:33 by dpalacio          #+#    #+#             */
-/*   Updated: 2022/06/23 18:49:44 by dpalacio         ###   ########.fr       */
+/*   Updated: 2022/06/23 20:00:10 by dpalacio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@ void	init(t_core *core)
 	core->map.iterations = 0;
 	core->map.step = 0;
 	core->map.automatic = 0;
+	core->map.delay = 250;
 	read_map(core);
 	init_sdl(core);
 }

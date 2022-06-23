@@ -6,7 +6,7 @@
 /*   By: dpalacio <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/22 11:24:27 by dpalacio          #+#    #+#             */
-/*   Updated: 2022/06/23 18:16:56 by dpalacio         ###   ########.fr       */
+/*   Updated: 2022/06/23 19:48:03 by dpalacio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,6 +43,7 @@ typedef struct s_map
 	int			iterations;
 	int			step;
 	int			automatic;
+	int			delay;
 }				t_map;
 
 /*--------CORE--------*/
